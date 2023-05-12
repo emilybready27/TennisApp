@@ -1,0 +1,23 @@
+## Author
+
+ - **Name:** Emily Bready
+ - **Email:** ebready2@illinois.edu
+
+## Purpose
+
+This application was built in order to analyze the performance of different
+professional tennis players, given a feasible tournament and year.
+I wanted to see how a particular player compared with other players through several stats that measure their average performance in a match.
+In doing so, I would be able to see what the strengths and weaknesses are
+of particular players and track the improvements they made over the years.
+I didn't want to be limited by a single year or tournament, so I also included a way to view a player's overall career performance.
+I also wanted to be able to see a historical record of all of the matches
+that a player played in the given tournament-year combination, as well as a few basic biographical facts about that person.
+
+## Data
+
+The source of the data used in this application is the ATP (Association of Tennis Professionals) World Tour website. I pulled from four separate datasets to combine information about tournaments, matches, match statistics, and players over the years of 1991 - 2016. Each observation considers an individual player's performance in a match, for every match and every year that they played. I added extra columns that pre-computed match averages in order to avoid that costly computation during runtime over the entire dataset. For a given tournament-year pair, the visualization plots the average statistics of the given player in a yellow rectangle and plots the average statistics over all the players in a blue rectangle. Then the overlap between them is the green rectangle. The difference in width between these rectangles shows how much the player deviates from everyone else, on average.
+
+## References
+
+ - [ATP World Tour Tennis Data](https://datahub.io/sports-data/atp-world-tour-tennis-data)
